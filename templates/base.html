@@ -69,6 +69,18 @@
       background: white;
       color:  #79927d;
     }
+     /* Prevent line breaks in the navbar items */
+  .navbar-nav .nav-link {
+    white-space: nowrap;
+  }
+
+  /* Optional: Adjust padding and font size for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0.75rem; /* Adjust the padding for smaller screens */
+      font-size: 0.9rem; /* Adjust font size if necessary */
+    }
+  }
   </style>
 </head>
 
@@ -133,7 +145,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/user/about/"><i class="fa-solid fa-address-card"></i> About Us</a>
                 </li>
-                <li class="nav-item">
+                 <li class="nav-item">
                   <a class="nav-link" href="/user/product/"><i class="fa-brands fa-product-hunt"></i> Product</a>
                 </li>
                 <li class="nav-item">
